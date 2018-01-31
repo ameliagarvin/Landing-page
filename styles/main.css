@@ -1,0 +1,247 @@
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS reset */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* End of Box sizing */
+
+/* Global Styles */
+
+header {
+  height: 68px;
+  width: 100%;
+  display: flex;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  justify-content: space-between;
+}
+nav {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+}
+header ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+}
+.logo {
+  height: inherit;
+  width: 60vw;
+  background-repeat: no-repeat;
+  background-image: url("../images/amelia-logo.svg");
+}
+body {
+  font-family:"Karla", sans-serif;
+}
+
+/* Banner */
+
+.hero-banner {
+  width: 100%;
+  background-image: url(../images/this-could-be-you.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.page-title {
+  width: 80vw;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.description {
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* container section */
+.container {
+  position: relative;
+  margin: 5rem 0;
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 60%;
+  border-top: .25em solid #000;
+  border-right: .25em solid #000;
+}
+.item {
+  background-image: url("../images/ideation-sketch.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 0 0 50%;
+  display: flex;
+  padding: 0.5rem;
+  background-position: center;
+  background-position-y: 4px;
+}
+
+.item:nth-of-type(2) {
+  background-image: url("../images/ideation-simplified.svg");
+  background-size: contain;
+  background-position: center;
+  background-position-y: 5px;
+}
+
+.item:nth-of-type(3) {
+  background-image: url("../images/creation-simplified.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.item:nth-of-type(4) {
+  background-image: url("../images/iteration-simplified.svg");
+  background-size: contain;
+  background-position: center;
+}
+.right-side {
+  padding: 0 .5rem;
+  width: 50vw;
+  background: #FFF;
+  border-bottom: .25em solid #000;
+}
+
+/* Gallery */
+.gallery-banner {
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/amelia_garvin_9.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.gallery {
+  width: 100%;
+}
+.gallery-big-square {
+width: 50vh;
+height: 500px;
+background-image: url('../images/logo-ideation-sketch.jpg');
+}
+.gallery-item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 0 0 50%;
+  display: flex;
+  padding: 0.5rem;
+  background-position: center;
+}
+.gallery-item:first-of-type {
+  background-image: url("../images/ideation-sketch.png");
+}
+
+/* contact */
+footer { 
+  background: #000;
+  height: 10rem;
+  margin-top: 5rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+/* Start of media queries */
+
+@media only screen and (max-width: 900px) {
+.container {
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.left-side ul {
+  flex-direction: row;
+}
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  border-top: .25em solid #000; 
+  border-right: none;
+} 
+
+.right-side {
+  width: 100%;
+  background: #FFF;
+  border-bottom: .25em solid #000;
+}
+
+}
