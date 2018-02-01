@@ -72,9 +72,10 @@ header {
   justify-content: space-between;
 }
 nav {
-  width: 40vw;
+  width: 80vw;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 header ul {
   width: 100%;
@@ -87,40 +88,150 @@ header ul {
 
 header a {
   text-decoration: none;
+  color: #333e4d;
 }
-.logo {
-  height: inherit;
-  width: 60vw;
-  background-repeat: no-repeat;
-  background-image: url("../images/amelia-logo.svg");
+
+header a:hover,
+header a:active,
+header a:focus {
+  background: #333e4d;
+  color:#ede5f3;
 }
+
 body {
   font-family:"Karla", sans-serif;
+  color: #333e4d;
+  background: #ede5f3;
 }
 
 /* Banner */
 
 .hero-banner {
   width: 100%;
-  background-image: url(../images/this-could-be-you.jpg);
+  background-image: url(../images/banner-amelia.jpg);
   height: 100vh;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
 }
-.page-title {
+
+.name {
+  position: absolute;
+  width: 100%;
+  top: 20vh;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.name h1 {
+  font-size: 3rem;
+  margin-bottom: .5em;
+}
+
+.about {
+  display: flex;
   width: 80vw;
   margin: 0 auto;
   letter-spacing: 2px;
-  margin-top: 2rem;
   font-size: 2rem;
-  padding: 0 1rem;
+  padding: 1em;
+  background: #FFF;
 }
 
-.description {
-  line-height: 1.5rem;
-  margin-top: 1rem;
-  font-size: 1rem;
+.about h1 {
+  text-align: center;
+  margin-bottom: 1em;
 }
+.page-title {
+  width: 50%;
+ }
+ 
+.description {
+   line-height: 1.5rem;
+   font-size: 1rem;
+}
+.tools {
+  width: 50%;
+}
+
+.tool-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1em;
+}
+.tool-item {
+  flex: 1 0 25%;
+  margin-bottom: .5em;
+  width: 45px;
+  height: 45px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tool-item:first-of-type {
+  background-image: url("../images/pencil_icon.png");
+}
+
+.tool-item:nth-of-type(2){
+ background-image: url("../images/paintbrush.png");
+}
+
+.tool-item:nth-of-type(3){
+background-image: url("../images/Photoshop_CC_icon.png");
+}
+
+.tool-item:nth-of-type(4){
+background-image: url("../images/adobe_illustrator.png");
+}
+
+.tool-item:nth-of-type(5){
+background-image: url("../images/invision_icon.png");
+}
+
+.tool-item:nth-of-type(6){
+background-image: url("../images/balsamiq_icon.png");
+}
+
+.tool-item:nth-of-type(7){
+  background-image: url("../images/marvel-app_icon.png");
+}
+
+.tool-item:nth-of-type(8){
+background-image: url("../images/html_icon.png");  
+}
+
+.tool-item:nth-of-type(9){
+ background-image: url("../images/css_icon.png"); 
+}
+
+.tool-item:nth-of-type(10){
+  background-image: url("../images/javascript_icon.svg");
+}
+
+.tool-item:nth-of-type(11){
+  background-image: url("../images/php_icon.png");
+}
+
+.tool-item:nth-of-type(12){
+  background-image: url("../images/jquery_icon.png");
+}
+
+.tool-item:nth-of-type(13){
+  background-image: url("../images/wordpress_icon.png");
+}
+
+.tool-item:nth-of-type(14){
+  background-image: url("../images/github.png");
+}
+
+.tool-item:nth-of-type(15){
+  background-image: url("../images/visual-studio-code_icon.png");
+}
+
+.tool-item:nth-of-type(16){
+  background-image: url("../images/slack_icon.png");
+}
+
 
 /* container section */
 .container {
