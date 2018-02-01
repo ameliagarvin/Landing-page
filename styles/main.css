@@ -94,8 +94,7 @@ header a {
 header a:hover,
 header a:active,
 header a:focus {
-  background: #333e4d;
-  color:#ede5f3;
+  text-decoration: underline;
 }
 
 body {
@@ -130,6 +129,7 @@ body {
 
 .about {
   display: flex;
+  flex-wrap: wrap;
   width: 80vw;
   margin: 0 auto;
   letter-spacing: 2px;
@@ -141,33 +141,45 @@ body {
 .about h1 {
   text-align: center;
   margin-bottom: 1em;
+  margin: .5em 0;
 }
-.page-title {
-  width: 50%;
- }
  
-.description {
+.about p {
    line-height: 1.5rem;
    font-size: 1rem;
 }
 
-.community {
+.about h2 {
+  width: 100%;
+  margin: 1em 0;
+  font-size: .75em;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ede5f3;
+}
+
+.page-title {
   width: 50%;
+ }
+
+.community {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.canada-learning-code {
+  width: 100%;
   height: 50px;
+  margin-top: .5em;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   background-image: url("../images/canada_learning_code.png");
 }
 .tools {
   width: 50%;
 }
 
-.tools p {
-  width: 100%;
-  margin-top: .25em;
-  font-size: .75em;
-  text-align: center;
-}
 .tool-box {
   display: flex;
   flex-wrap: wrap;
@@ -246,61 +258,155 @@ background-image: url("../images/html_icon.png");
   background-image: url("../images/slack_icon.png");
 }
 
-
-/* Project section */
-
-/* Gallery section */
-.gallery-banner {
+.backtotop {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 400px;
-  background-image: url(../images/amelia_garvin_9.jpg);
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.impact {
+  width: inherit;
+  height: 300px;
+  background: url("../images/impact-scholarship.png");
+}
+
+.read-more {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.read-more a {
+  font-size: 1.5rem;
+}
+.award-banner {
+  width: 100%;
+  height: 200px;
+  background-image: url("../images/this-could-be-you.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
+/* Project section */
 
-.gallery {
+.projects-banner {
   width: 100%;
+  height: 200px;
+  background-image: url("../images/thinking and learning.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.projects {
+  width: 80vw;
+  margin: 0 auto;
+  background: #fff;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 3rem;
+}
+.projects-item {
+  flex: 1 0 100%;
+  height: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 5em;
+  position: relative;
 }
 
+.visit {
+  position: absolute;
+  bottom: -20vh;
+  left: 45%;
+  font-size: .75em;
+  padding: 0 .25em;
+  border-radius: 5%;
+  background: #ede5f3;
+}
+
+.visit a {
+  color: #333e4d;
+  text-decoration: none;
+}
+.projects-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-item:nth-of-type(1) {
+  background-image: url("../images/pong.png");
+}
+
+.projects-item:nth-of-type(2) {
+  background-image: url("../images/web-world.png");
+}
+
+.projects-item:nth-of-type(3) {
+  background-image: url("../images/lovesea.png");
+}
+
+
+/* Gallery section */
+.gallery {
+  width: 80vw;
+  margin: 0 auto;
+}
+.gallery-item {
+  flex: 1 0 25%;
+  margin-bottom: .5em;
+  width: 45px;
+  height: 45px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery-item:nth-of-type(1){
+  background-image: url("../images/amelia-logo.svg");
+}
+.gallery-item:nth-of-type(2){
+  
+}
+.gallery-item:nth-of-type(3){
+  
+}
 
 /* contact */
 footer { 
   background: #000;
-  height: 10rem;
-  margin-top: 5rem;
-  position: relative;
-  bottom: 0;
-  left: 0;
+}
+
+.contact {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 3rem;
+  color: #ede5f3;
+}
+.contact h1 {
+  font-size: 2rem;
+}
+.email a {
+color: #ede5f3;
+text-decoration: none;
+}
+.social-media-links {
+  display: flex;
+  margin: 1em 0;
+  font-size: 2rem;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #ede5f3;
+}
+
+.social-media-links a {
+  color: #ede5f3;
+}
+
+.contact .backtotop a{
+  font-size: 2rem;
 }
 
 /* Start of media queries */
 
 @media only screen and (max-width: 900px) {
-.container {
-  margin: auto;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-}
 
-
-.left-side ul {
-  flex-direction: row;
-}
-
-.middle {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  border-top: .25em solid #000; 
-  border-right: none;
-} 
-
-.right-side {
-  width: 100%;
-  background: #FFF;
-  border-bottom: .25em solid #000;
-}
 
 }
