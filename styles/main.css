@@ -127,6 +127,10 @@ body {
   margin-bottom: .5em;
 }
 
+.name h2 {
+  color: cornflowerblue;
+}
+
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -399,9 +403,7 @@ background-image: url("../images/html_icon.png");
   background-attachment: fixed;
   background-size: cover;
 }
-footer { 
-  background: cornflowerblue;
-}
+
 
 .contact {
   text-align: center;
@@ -421,7 +423,6 @@ text-decoration: none;
   margin: 1em 0;
   font-size: 2rem;
   justify-content: space-evenly;
-  border-bottom: 1px solid #ede5f3;
 }
 
 .social-media-links a {
