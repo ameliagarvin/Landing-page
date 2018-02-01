@@ -100,7 +100,7 @@ header a:focus {
 body {
   font-family:"Karla", sans-serif;
   color: #333e4d;
-  background: #ede5f3;
+  background: cornflowerblue;
 }
 
 /* Banner */
@@ -262,10 +262,12 @@ background-image: url("../images/html_icon.png");
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: 1em;
+  font-size: 1.5em;
   margin-top: 1em;
 }
-
+.backtotop a {
+  color: cornflowerblue;
+}
 .impact {
   width: inherit;
   height: 300px;
@@ -282,7 +284,7 @@ background-image: url("../images/html_icon.png");
 }
 .award-banner {
   width: 100%;
-  height: 200px;
+  height: 400px;
   background-image: url("../images/this-could-be-you.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -291,7 +293,7 @@ background-image: url("../images/html_icon.png");
 
 .projects-banner {
   width: 100%;
-  height: 200px;
+  height: 400px;
   background-image: url("../images/thinking and learning.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -303,6 +305,7 @@ background-image: url("../images/html_icon.png");
   font-size: 2rem;
   text-align: center;
   line-height: 3rem;
+  padding-top: 2em;
 }
 .projects-item {
   flex: 1 0 100%;
@@ -321,16 +324,17 @@ background-image: url("../images/html_icon.png");
   font-size: .75em;
   padding: 0 .25em;
   border-radius: 5%;
-  background: #ede5f3;
+  background: cornflowerblue;
 }
 
 .visit a {
-  color: #333e4d;
+  color: #ede5f3;
   text-decoration: none;
 }
 .projects-images {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2em;
 }
 .projects-item:nth-of-type(1) {
   background-image: url("../images/pong.png");
@@ -342,6 +346,7 @@ background-image: url("../images/html_icon.png");
 
 .projects-item:nth-of-type(3) {
   background-image: url("../images/lovesea.png");
+  margin-bottom: 2em;
 }
 
 
@@ -349,30 +354,53 @@ background-image: url("../images/html_icon.png");
 .gallery {
   width: 80vw;
   margin: 0 auto;
+  background: #fff;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 10rem;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
 }
 .gallery-item {
-  flex: 1 0 25%;
+  flex: 0 0 50%;
   margin-bottom: .5em;
-  width: 45px;
-  height: 45px;
+  height: 200px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gallery-item:nth-of-type(1){
+  background-image: url("../images/logo-sketch.jpg");
+}
+
+.gallery-item:nth-of-type(2){
   background-image: url("../images/amelia-logo.svg");
 }
-.gallery-item:nth-of-type(2){
-  
-}
+
 .gallery-item:nth-of-type(3){
-  
+  background-image: url("../images/Logo design Red Academy.png");
+}
+
+.gallery-item:nth-of-type(4) {
+  background-image: url("../images/red_logo.png");
 }
 
 /* contact */
+
+.footer-banner {
+  background-image: url("../images/amelia_garvin_9.jpg");
+  width: 100%;
+  /* background-image: url(../images/banner-amelia.jpg); */
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+}
 footer { 
-  background: #000;
+  background: cornflowerblue;
 }
 
 .contact {
@@ -402,6 +430,7 @@ text-decoration: none;
 
 .contact .backtotop a{
   font-size: 2rem;
+  color:#ede5f3;
 }
 
 /* Start of media queries */
