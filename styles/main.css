@@ -150,10 +150,24 @@ body {
    line-height: 1.5rem;
    font-size: 1rem;
 }
+
+.community {
+  width: 50%;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/canada_learning_code.png");
+}
 .tools {
   width: 50%;
 }
 
+.tools p {
+  width: 100%;
+  margin-top: .25em;
+  font-size: .75em;
+  text-align: center;
+}
 .tool-box {
   display: flex;
   flex-wrap: wrap;
@@ -233,59 +247,9 @@ background-image: url("../images/html_icon.png");
 }
 
 
-/* container section */
-.container {
-  position: relative;
-  margin: 5rem 0;
-  width: 100%;
-  height: 500px;
-  display: flex;
-  flex-wrap: wrap;
-}
+/* Project section */
 
-.middle {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-}
-.item {
-  background-image: url("../images/ideation-sketch.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  flex: 0 0 25%;
-  display: flex;
-  padding: 0.5rem;
-  background-position: center;
-  background-position-y: 4px;
-}
-
-.item:nth-of-type(2) {
-  background-image: url("../images/ideation-simplified.svg");
-  background-size: contain;
-  background-position: center;
-  background-position-y: 5px;
-}
-
-.item:nth-of-type(3) {
-  background-image: url("../images/creation-simplified.svg");
-  background-size: contain;
-  background-position: center;
-}
-
-.item:nth-of-type(4) {
-  background-image: url("../images/iteration-simplified.svg");
-  background-size: contain;
-  background-position: center;
-}
-.right-side {
-  padding: 0 .5rem;
-  width: 100%;
-  background: #FFF;
-  border-bottom: .25em solid #000;
-}
-
-/* Gallery */
+/* Gallery section */
 .gallery-banner {
   width: 100%;
   height: 400px;
@@ -297,22 +261,7 @@ background-image: url("../images/html_icon.png");
 .gallery {
   width: 100%;
 }
-.gallery-big-square {
-width: 50vh;
-height: 500px;
-background-image: url('../images/logo-ideation-sketch.jpg');
-}
-.gallery-item {
-  background-size: contain;
-  background-repeat: no-repeat;
-  flex: 0 0 50%;
-  display: flex;
-  padding: 0.5rem;
-  background-position: center;
-}
-.gallery-item:first-of-type {
-  background-image: url("../images/ideation-sketch.png");
-}
+
 
 /* contact */
 footer { 
